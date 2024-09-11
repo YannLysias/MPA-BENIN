@@ -62,8 +62,6 @@ class adherantController extends Controller
 
     public function generatePDF()
     {
-        Log::info('generatePDF method called');
-        dd('cvcvcvcvc');
         $options = new Options();
         $options->set('isHtml5ParserEnabled', true);
 
