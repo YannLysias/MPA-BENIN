@@ -202,7 +202,7 @@
 
             <label class="col-form-label col-md-3 col-sm-3 label-align">Departement<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
-            <select id="departement_id" value="{{ old('departement_id') }}" name="departement_id" class="form-control forms-control-lg" required>
+            <select id="departement_id" name="departement_id" class="form-control forms-control-lg" required>
                 <option value=""  disabled selected>Choisissez un departement
                 </option>
                 @foreach ($departements as $departement)

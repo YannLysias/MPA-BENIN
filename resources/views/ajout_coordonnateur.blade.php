@@ -184,10 +184,10 @@
         </div>
 
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Titres</label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Postes</label>
             <div class="col-md-6 col-sm-6">
             <select id="choix" name="titre_id" class="form-control forms-control-lg">
-                <option value="" disabled selected>Choisissez un Titre</option>
+                <option value="" disabled selected>Choisissez un Poste</option>
                 @foreach ($titres as $titre)
                 <option value="{{ $titre->id }}" {{ old('titre_id') == $titre->id ? 'selected' : '' }}>
                     {{ $titre->libelle }}
@@ -208,7 +208,7 @@
                 <option value=""  disabled selected>Choisissez un departement
                 </option>
                 @foreach ($departements as $departement)
-                <option value="{{ $departement->id }}" {{ old('departement_id') == $departement->id ? 'selected' : '' }}>
+                <option >
                     {{ $departement->libelle }}
                 </option>
                 </option>
