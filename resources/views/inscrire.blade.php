@@ -193,21 +193,6 @@
                                 </div>
                     
                             <div class="field item form-group">
-                                <label class="col-form-label col-md-3 col-sm-3  label-align">Postes</label>
-                                <div class="col-md-6 col-sm-6">
-                                <select id="choix" name="titre_id" class="form-control forms-control-lg">
-                                    <option value="" disabled selected>Choisissez un Poste</option>
-                                    @foreach ($titres as $titre)
-                                    <option value="{{$titre ->id}}">{{$titre->libelle}}</option>
-                                    @endforeach
-                                    @error('titre_id')
-                                    <div class="d-block text-danger">{{$message}}</div>
-                                    @enderror
-                                </select>
-                            </div>
-                            </div>
-                    
-                            <div class="field item form-group">
                     
                                 <label class="col-form-label col-md-3 col-sm-3 label-align">Departement<span class="required">*</span></label>
                                 <div class="col-md-6 col-sm-6">
@@ -291,9 +276,9 @@
                     
                         <div class="ln_solid">
                         <div class="form-group">
-                            <div class="col-md-6 offset-md-3">
-                                <button type='submit' class="btn btn-primary">Soumettre</button>
-                                <button type='reset' class="btn btn-success">Annuler</button>
+                            <div class="col-md-6 offset-md-2">
+                                <button type='submit' class="btn btn-primary mt-3">Soumettre</button>
+                                <button type='reset' class="btn btn-success mt-3">Annuler</button>
                             </div>
                         </div>
 
