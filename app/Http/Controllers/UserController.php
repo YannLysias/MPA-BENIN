@@ -125,7 +125,7 @@ class UserController extends Controller
 
     public function coordonateurPDF()
     {
-        dd('cvcvcvcvc');
+
         $options = new Options();
         $options->set('isHtml5ParserEnabled', true);
 
