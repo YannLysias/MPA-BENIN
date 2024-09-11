@@ -1,7 +1,7 @@
 <x-mail::message>
-# Introduction
+# Salut {{ $user["nom"] }}
 
-<p>Nous sommes ravis de vous informer que votre compte a été créé avec succès sur la plateforme d'Action pour le Développement National.</p>
+<p>Nous sommes ravis de vous informer que votre compte a été créé avec succès sur la plateforme <b>Mouvement des Peuples Africains</b>.</p>
 
 <p>Vos identifiants de connexion sont les suivants :</p>
 
