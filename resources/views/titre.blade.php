@@ -95,7 +95,7 @@
                         <tr>
                           <th>N°</th>
                           <th>Postes</th>
-                          <th>Adhérent</th>
+                          <th>Adhérent par poste</th>
 
                           <th>Manipulation</th>
 

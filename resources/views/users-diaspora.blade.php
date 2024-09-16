@@ -134,6 +134,11 @@
                               </div>
 
                               <div class="row">
+                                <div class="col-lg-3 col-md-4 label">Numeéro Whatsapp</div>
+                                <div class="col-lg-9 col-md-8">{{ $diaspora->whatsap }}</div>
+                              </div>
+
+                              <div class="row">
                                 <div class="col-lg-3 col-md-4 label">Pays</div>
                                 <div class="col-lg-9 col-md-8">{{ $diaspora->pays }}</div>
                               </div>

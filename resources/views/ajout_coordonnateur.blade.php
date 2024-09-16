@@ -102,9 +102,9 @@
             
         </div>
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Email</label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Email*</label>
             <div class="col-md-6 col-sm-6">
-                <input class="form-control" name="email" class='email' placeholder="Pas obligatoire"  type="email"  value="{{ old('email') }}"/>
+                <input class="form-control" name="email" class='email' placeholder="Indiquez votre Email"  type="email" required='required'  value="{{ old('email') }}"/>
                 @error('email')
                 <div class="d-block text-danger">{{$message}}</div>
             @enderror
@@ -114,7 +114,7 @@
         <div class="field item form-group">
             <label class="col-form-label col-md-3 col-sm-3  label-align">Téléphone<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
-                <input class="form-control" type="tel" class='tel' placeholder="Saisissez votre Numéro" name="telephone" required='required' data-validate-length-range="8,20"  value="{{ old('telephone') }}"/>
+                <input class="form-control" type="tel" class='tel' placeholder="Indiquez votre Numéro" name="telephone" required='required' data-validate-length-range="8,20"  value="{{ old('telephone') }}"/>
                 @error('telephone')
                 <div class="d-block text-danger">{{$message}}</div>
                 @enderror
@@ -134,7 +134,7 @@
         <div class="field item form-group">
             <label class="col-form-label col-md-3 col-sm-3  label-align">Lieu de Naissance<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
-                <input class="form-control" class='optional' placeholder="Saisissez votre lieu de naissance" name="lieu_naissance" data-validate-length-range="5,15" type="text" value="{{ old('lieu_naissance') }}"/>
+                <input class="form-control" class='optional' placeholder="Indiquez votre lieu de naissance" name="lieu_naissance" data-validate-length-range="5,15" type="text" value="{{ old('lieu_naissance') }}"/>
                 @error('lieu_naissance')
                 <div class="d-block text-danger">{{$message}}</div>
                 @enderror
@@ -144,7 +144,7 @@
         <div class="field item form-group">
             <label class="col-form-label col-md-3 col-sm-3  label-align">Groupe sanguin<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
-                <input class="form-control" class='optional' placeholder="Saisissez votre groupe sanguin" name="gsanguin" data-validate-length-range="5,15" type="text" value="{{ old('gsanguin') }}"/>
+                <input class="form-control" class='optional' placeholder="Indiquez votre groupe sanguin" name="gsanguin" data-validate-length-range="5,15" type="text" value="{{ old('gsanguin') }}"/>
                 @error('gsanguin')
                 <div class="d-block text-danger">{{$message}}</div>
                 @enderror
@@ -152,9 +152,9 @@
         </div>
 
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Diplome plus élevé<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Niveau d'inscription<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
-                <input class="form-control" class='optional' placeholder="Quel est votre dernier diplome" name="diplome" data-validate-length-range="5,15" type="text" value="{{ old('diplome') }}"/>
+                <input class="form-control" class='optional' placeholder="Indiquez le dernier diplome que vous avez obtenu" name="diplome" data-validate-length-range="5,15" type="text" value="{{ old('diplome') }}"/>
                 @error('diplome')
                 <div class="d-block text-danger">{{$message}}</div>
                 @enderror
@@ -164,7 +164,7 @@
         <div class="field item form-group">
             <label class="col-form-label col-md-3 col-sm-3  label-align">Profession<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
-                <input class="form-control" class='optional' name="profession" placeholder="Saisissez votre Profession" data-validate-length-range="5,15" type="text" value="{{ old('profession') }}" />
+                <input class="form-control" class='optional' name="profession" placeholder="Indiquez votre profession" data-validate-length-range="5,15" type="text" value="{{ old('profession') }}" />
                 @error('profession')
                 <div class="d-block text-danger">{{$message}}</div>
                 @enderror
@@ -429,70 +429,70 @@
 </script>
 
 <script>
-    $(document).ready(function() {
-        // Détection des changements de sélection pour le département
-        $('#departement_id').change(function() {
-            var departementId = $(this).val();
-            if (departementId) {
-                var url = "{{ route('get-circonstriptions', ':departementId') }}";
-                url = url.replace(':departementId', departementId);
-                //  $('#commune_id').attr('data-url', url);
-                // Appeler la fonction pour charger les options pour la commune
-                loadOptions(url, $('#circonscription_id'));
+        $(document).ready(function() {
+            // Détection des changements de sélection pour le département
+            $('#departement_id').change(function() {
+                var departementId = $(this).val();
+                if (departementId) {
+                    var url = "{{ route('get-circonstriptions', ':departementId') }}";
+                    url = url.replace(':departementId', departementId);
+                    //  $('#commune_id').attr('data-url', url);
+                    // Appeler la fonction pour charger les options pour la commune
+                    loadOptions(url, $('#circonscription_id'));
+                }
+            });
+
+            // Détection des changements de sélection pour la circonscription
+            $('#circonscription_id').change(function() {
+                var circonscriptionId = $(this).val();
+
+                var url = "{{ route('get-communes', ':circonscriptionId') }}";
+                url = url.replace(':circonscriptionId', circonscriptionId);
+                $('#circonscription_id').attr('data-url', url)
+                var communeSelect = $('#commune_id');
+                loadOptions(url + '/', communeSelect);
+            });
+
+            // Détection des changements de sélection pour la commune
+            $('#commune_id').change(function() {
+                var communeId = $(this).val();
+
+                var url = "{{ route('get-arrondissements', ':communeId') }}";
+                url = url.replace(':communeId', communeId);
+                $('#commune_id').attr('data-url', url)
+                var arrondissementSelect = $('#arrondissement_id');
+                loadOptions(url + '/', arrondissementSelect);
+            });
+
+            // Détection des changements de sélection pour l'arrondissement
+            $('#arrondissement_id').change(function() {
+                var arrondissementId = $(this).val();
+
+                var url = "{{ route('get-quartiers', ':arrondissementId') }}";
+                url = url.replace(':arrondissementId', arrondissementId);
+                $('#arrondissement_id').attr('data-url', url)
+                var quartierSelect = $('#quartier_id');
+                loadOptions(url + '/', quartierSelect);
+
+            });
+
+            // Fonction pour charger les options en fonction de l'URL spécifiée
+            function loadOptions(url, targetSelect) {
+                $.ajax({
+                    type: "GET"
+                    , url: url
+                    , success: function(options) {
+                        targetSelect.empty();
+                        targetSelect.append('<option value="selected ' + '">' + 'Choisissez' + '</option>');
+                        $.each(options, function(key, value) {
+                            targetSelect.append('<option value="' + key + '">' + value + '</option>');
+                        });
+                    }
+                });
             }
         });
 
-        // Détection des changements de sélection pour la circonscription
-        $('#circonscription_id').change(function() {
-            var circonscriptionId = $(this).val();
-
-            var url = "{{ route('get-communes', ':circonscriptionId') }}";
-            url = url.replace(':circonscriptionId', circonscriptionId);
-            $('#circonscription_id').attr('data-url', url)
-            var communeSelect = $('#commune_id');
-            loadOptions(url + '/', communeSelect);
-        });
-
-        // Détection des changements de sélection pour la commune
-        $('#commune_id').change(function() {
-            var communeId = $(this).val();
-
-            var url = "{{ route('get-arrondissements', ':communeId') }}";
-            url = url.replace(':communeId', communeId);
-            $('#commune_id').attr('data-url', url)
-            var arrondissementSelect = $('#arrondissement_id');
-            loadOptions(url + '/', arrondissementSelect);
-        });
-
-        // Détection des changements de sélection pour l'arrondissement
-        $('#arrondissement_id').change(function() {
-            var arrondissementId = $(this).val();
-
-            var url = "{{ route('get-quartiers', ':arrondissementId') }}";
-            url = url.replace(':arrondissementId', arrondissementId);
-            $('#arrondissement_id').attr('data-url', url)
-            var quartierSelect = $('#quartier_id');
-            loadOptions(url + '/', quartierSelect);
-
-        });
-
-        // Fonction pour charger les options en fonction de l'URL spécifiée
-        function loadOptions(url, targetSelect) {
-            $.ajax({
-                type: "GET"
-                , url: url
-                , success: function(options) {
-                    targetSelect.empty();
-                    targetSelect.append('<option value="selected ' + '">' + 'Choisissez' + '</option>');
-                    $.each(options, function(key, value) {
-                        targetSelect.append('<option value="' + key + '">' + value + '</option>');
-                    });
-                }
-            });
-        }
-    });
-
-</script>
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- jQuery -->

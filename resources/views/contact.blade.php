@@ -56,10 +56,9 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs  text-dark" style="background-color: #fff;" data-aos="fade-in">
-      <div class="container" style>
-        <h2>Contacter-nous</h2>
-        <p> Pour toute question ou suggestion, n'hésitez pas à nous contacter. </p>
+    <div class="breadcrumbs" style="background-color: #0b5e1e;">
+      <div class="container">
+        <h2>CONTACTEZ-NOUS</h2>
       </div>
     </div><!-- End Breadcrumbs -->
 
@@ -90,7 +89,7 @@
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Téléphone:</h4>
+                <h4>Téléphone</h4> 000 000 000
                 <p> </p>
               </div>
 
@@ -99,18 +98,33 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="/contact" method="post" role="form" class="php-email-form">
+            <form action="#" method="post" role="form" class="php-email-form">
               @csrf
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="nom" class="form-control" id="nom" placeholder="Votre Nom" required>
+                  <input type="text" name="nom" class="form-control" id="nom" placeholder="Votre nom" required>
                   @error('nom')
                   <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre email" required>
                   @error('email')
+                  <div class="d-block text-danger">{{$message}}</div>
+                  @enderror
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="adresse" class="form-control" id="adresse" placeholder="Votre adresse" required>
+                  @error('adresse')
+                  <div class="d-block text-danger">{{$message}}</div>
+                  @enderror
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="text" class="form-control" name="telephone" id="email" placeholder="Votre téléphone" required>
+                  @error('telephone')
                   <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
@@ -120,10 +134,10 @@
 
                 <select id="choix" value="{{ old('subjection') }}" class="form-control" name="subjection" required>
                   <option value="">Objet</option>
-                  <option value="Masculin">Partenariat</option>
-                  <option value="Feminin">Suggestion</option>
-                  <option value="Masculin">Renseigement</option>
-                  <option value="Feminin">Autres</option>
+                  <option value="Partenariat">Partenariat</option>
+                  <option value="Suggestion">Suggestion</option>
+                  <option value="Renseigement">Renseigement</option>
+                  <option value="Autres">Autres</option>
                 </select>
                 @error('subjection')
                 <div class="d-block text-danger">{{$message}}</div>
@@ -163,14 +177,7 @@
           &copy; 2024 Mouvement des Peuples Africains  <strong></strong>
         </div>
       </div>
-      {{-- <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" style="background-color: #0b5e1e; color: #fff;" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" style="background-color: #0b5e1e; color: #fff;" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" style="background-color: #0b5e1e; color: #fff;" class="instagram"><i
-            class="bx bxl-instagram"></i></a>
-        <a href="#" style="background-color: #0b5e1e; color: #fff;" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" style="background-color: #0b5e1e; color: #fff;" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div> --}}
+
     </div>
   </footer><!-- End Footer -->
 

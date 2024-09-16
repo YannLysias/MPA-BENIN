@@ -144,8 +144,18 @@
                                 </div>
 
                                 <div class="row">
+                                  <div class="col-lg-3 col-md-4 label">Occupation</div>
+                                  <div class="col-lg-9 col-md-8">{{ $user->occupation }}</div>
+                                </div>
+
+                                <div class="row">
                                   <div class="col-lg-3 col-md-4 label">NPI</div>
                                   <div class="col-lg-9 col-md-8">{{ $user->npi }}</div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-lg-3 col-md-4 label">Numéro whatsapp</div>
+                                  <div class="col-lg-9 col-md-8">{{ $user->whatsap }}</div>
                                 </div>
 
                                 <div class="row">

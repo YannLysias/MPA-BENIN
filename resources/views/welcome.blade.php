@@ -74,7 +74,7 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="{{ ('img/Africa.png') }}" class="img-fluid" alt="image" style=" width : 650px; height: 650px">
+            <img src="{{ ('img/Carte.png') }}" class="img-fluid" alt="image" style=" width : 650px; height: 650px">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h2 style=" font-weight: bold;">Présentation</h3>
@@ -82,25 +82,25 @@
                 Vous êtes <b>citoyen béninois,</b> vivant sur le territoire <b>national</b> ou de la <b>diaspora</b>, soucieux du développement harmonieux, inclusif et durable de notre pays.
                  Vous désirez participer efficacement à la <b>construction</b> concrète de notre nation commune par vos <b>idées</b>, vos <b>compétences</b> et vos <b>cotisations.</b>
                 Rejoignez par le biais de cette plateforme <b>le Mouvement des Peuples Africains (MPA)</b>.
-                 Vous y retrouverez des <b>hommes</b> et des <b>femmes</b> de toute condition, préoccupés d’un avenir radieux pour les <b>filles</b> et <b>fils</b> de notre pays le BENIN, du continent AFRICAIN, et décidés à faire la <b>politique</b> autrement.
+                 Vous y retrouverez des <b>hommes</b> et des <b>femmes</b> de toutes conditions, préoccupés d’un avenir radieux pour les <b>filles</b> et <b>fils</b> de notre pays le BENIN, du continent AFRICAIN, et décidés à faire la <b>politique</b> autrement.
             </p>
             <ul>
                 <li><b>Le MPA, c’est la garantie</b></li>
 
                     <ol>• Du respect scrupuleux de la constitution ;</ol>
-                    <ol>• De la promotion de l'unité et la cohésion nationale ; </ol>
-                    <ol>• De la préservation de la paix et de la stabilité sociale ;</ol>
-                    <ol>• Promouvoir le patriotisme, la fraternité, la justice et le travail dans la paix ;</ol>
-                    <ol>• De la participation active et en toute légalité à la vie socio politique et économique de votre pays ;</ol>
-                    <ol>• De l’éducation des populations en vue d’élever leur niveau de conscience politique et d’assurer leur participation effective et responsable à la vie politique, économique et sociale de la patrie ;</ol>
+                    <ol>• de la promotion de l'unité et la cohésion nationale ; </ol>
+                    <ol>• de la préservation de la paix et de la stabilité sociale ;</ol>
+                    <ol>• promouvoir le patriotisme, la fraternité, la justice et le travail dans la paix ;</ol>
+                    <ol>• de la participation active et en toute légalité à la vie socio politique et économique de votre pays ;</ol>
+                    <ol>• de l’éducation des populations en vue d’élever leur niveau de conscience politique et d’assurer leur participation effective et responsable à la vie politique, économique et sociale de la patrie ;</ol>
             </ul>
             <ul>
                 <li><b>Pour réaliser cette vision, le MPA BENIN oriente stratégiquement ses objectifs vers la réalisation d’actions prioritaires que sont :</b></li>
-                    <ol>•  L’impulsion d’un développement durable et harmonieux de la Patrie à travers la territorialisation des politiques publiques au sein d’entités territoriales viables et aménagées ;</ol>
-                    <ol>•  L’éduction civique et morale pour restaurer nos valeurs cardinales républicaines et démocratiques ; </ol>
-                    <ol>•  La construction et la préservation de la paix et stabilité sociale.</ol>
+                    <ol>•  l’impulsion d’un développement durable et harmonieux de la Patrie à travers la territorialisation des politiques publiques au sein d’entités territoriales viables et aménagées ;</ol>
+                    <ol>•  l’éduction civique et morale pour restaurer nos valeurs cardinales culturelles, républicaines et démocratiques ; </ol>
+                    <ol>•  la construction et la préservation de la paix et de la stabilité sociale.</ol>
             </ul>
-            <p>Bienvenue chez vous, bienvenue chez nous .</p>
+            <p>Bienvenue chez vous, bienvenue chez nous.</p>
           </div>
         </div>
 
@@ -133,59 +133,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ======= Why Us Section ======= -->
-    {{-- <section id="why-us" class="why-us" style="background-color: #0b5e1e; color: #fff;">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-4 d-flex align-items-stretch" style="background-color: #0b5e1e; color: #fff;">
-            <div class="content" style="background-color: #0b5e1e; color: #fff;">
-              <h3>Présentation</h3>
-              <p>
-                Notre plateforme est dédiée à rassembler des individus engagés dans la promotion du développement
-                national et dans la réalisation de changements positifs au sein de notre société. En devenant membre,
-                vous rejoignez une communauté dynamique qui œuvre activement pour le progrès et l'amélioration de notre pays.
-              </p>
-              <div class="text-center">
-                <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" style="background-color: #0b5e1e; color: #fff;" data-aos-delay="100">
-            <div class="icon-boxes d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-receipt"></i>
-                    <h4>Corporis voluptates sit</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                  </div>
-                </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-cube-alt"></i>
-                    <h4>Ullamco laboris ladore pan</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                  </div>
-                </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-images"></i>
-                    <h4>Labore consequatur</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End .content-->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section --> --}}
-
-        <!-- ======= Testimonials Section ======= -->
-
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features mt-5">

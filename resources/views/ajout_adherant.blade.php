@@ -103,9 +103,9 @@
 
             </div>
             <div class="field item form-group">
-                <label class="col-form-label col-md-3 col-sm-3  label-align">Email</label>
+                <label class="col-form-label col-md-3 col-sm-3  label-align">Email*</label>
                 <div class="col-md-6 col-sm-6">
-                    <input class="form-control" name="email" class='email' placeholder="Pas obligatoire"  type="email"  value="{{ old('email') }}"/>
+                    <input class="form-control" name="email" class='email' placeholder="Indiquez votre Email"  required='required' type="email"  value="{{ old('email') }}"/>
                     @error('email')
                     <div class="d-block text-danger">{{$message}}</div>
                 @enderror
@@ -115,7 +115,7 @@
             <div class="field item form-group">
                 <label class="col-form-label col-md-3 col-sm-3  label-align">Téléphone<span class="required">*</span></label>
                 <div class="col-md-6 col-sm-6">
-                    <input class="form-control" type="tel" class='tel' placeholder="Saisissez votre Numéro" name="telephone" required='required' data-validate-length-range="8,20"  value="{{ old('telephone') }}"/>
+                    <input class="form-control" type="tel" class='tel' placeholder="Indiquez votre Numéro" name="telephone" required='required' data-validate-length-range="8,20"  value="{{ old('telephone') }}"/>
                     @error('telephone')
                     <div class="d-block text-danger">{{$message}}</div>
                     @enderror
@@ -135,7 +135,7 @@
             <div class="field item form-group">
                 <label class="col-form-label col-md-3 col-sm-3  label-align">Lieu de Naissance<span class="required">*</span></label>
                 <div class="col-md-6 col-sm-6">
-                    <input class="form-control" class='optional' placeholder="Saisissez votre lieu de naissance" name="lieu_naissance" data-validate-length-range="5,15" type="text" value="{{ old('lieu_naissance') }}"/>
+                    <input class="form-control" class='optional' placeholder="Indiquez votre lieu de naissance" name="lieu_naissance" data-validate-length-range="5,15" type="text" value="{{ old('lieu_naissance') }}"/>
                     @error('lieu_naissance')
                     <div class="d-block text-danger">{{$message}}</div>
                     @enderror
@@ -145,7 +145,7 @@
             <div class="field item form-group">
                 <label class="col-form-label col-md-3 col-sm-3  label-align">Groupe sanguin<span class="required">*</span></label>
                 <div class="col-md-6 col-sm-6">
-                    <input class="form-control" class='optional' placeholder="Saisissez votre groupe sanguin" name="gsanguin" data-validate-length-range="5,15" type="text" value="{{ old('gsanguin') }}"/>
+                    <input class="form-control" class='optional' placeholder="Indiquez votre groupe sanguin" name="gsanguin" data-validate-length-range="5,15" type="text" value="{{ old('gsanguin') }}"/>
                     @error('gsanguin')
                     <div class="d-block text-danger">{{$message}}</div>
                     @enderror
@@ -153,9 +153,9 @@
             </div>
 
             <div class="field item form-group">
-                <label class="col-form-label col-md-3 col-sm-3  label-align">Diplome plus élevé<span class="required">*</span></label>
+                <label class="col-form-label col-md-3 col-sm-3  label-align">Niveau d'inscription<span class="required">*</span></label>
                 <div class="col-md-6 col-sm-6">
-                    <input class="form-control" class='optional' placeholder="Quel est votre dernier diplome" name="diplome" data-validate-length-range="5,15" type="text" value="{{ old('diplome') }}"/>
+                    <input class="form-control" class='optional' placeholder="Indiquez le dernier diplome que vous avez obtenu" name="diplome" data-validate-length-range="5,15" type="text" value="{{ old('diplome') }}"/>
                     @error('diplome')
                     <div class="d-block text-danger">{{$message}}</div>
                     @enderror
@@ -165,7 +165,7 @@
             <div class="field item form-group">
                 <label class="col-form-label col-md-3 col-sm-3  label-align">Profession<span class="required">*</span></label>
                 <div class="col-md-6 col-sm-6">
-                    <input class="form-control" class='optional' name="profession" placeholder="Saisissez votre Profession" data-validate-length-range="5,15" type="text" value="{{ old('profession') }}" />
+                    <input class="form-control" class='optional' name="profession" placeholder="Indiquez votre profession" data-validate-length-range="5,15" type="text" value="{{ old('profession') }}" />
                     @error('profession')
                     <div class="d-block text-danger">{{$message}}</div>
                     @enderror

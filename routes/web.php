@@ -52,7 +52,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('diaspora',DiasporaController::class );
 
     Route::get('/get-circonstriptions/{departementId}/', [CirconstriptionController::class, 'getCirconstriptions'])->name('get-circonstriptions');
-    Route::get('/get-communes/{departementId}/', [CommuneController::class, 'getCommunes'])->name('get-communes');
+    Route::get('/get-communes/{circonscriptionId}/', [CommuneController::class, 'getCommunes'])->name('get-communes');
     Route::get('/get-arrondissements/{communeId}/', [ArrondissementController::class, 'getArrondissements'])->name('get-arrondissements');
     Route::get('/get-quartiers/{arrondissementId}/', [QuartierController::class, 'getQuartiers'])->name('get-quartiers');
     Route::get('/adherants/filter/', [adherantController::class, 'filter'])->name('filter-adherants');
@@ -85,7 +85,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/get-communes/{departementId}/', [CommuneController::class, 'getCommunes'])->name('get-communes');
     Route::get('/get-arrondissements/{communeId}/', [ArrondissementController::class, 'getArrondissements'])->name('get-arrondissements');
     Route::get('/get-quartiers/{arrondissementId}/', [QuartierController::class, 'getQuartiers'])->name('get-quartiers');
-
+    Route::get('/get-circonstriptions/{departementId}/', [CirconstriptionController::class, 'getCirconstriptions'])->name('get-circonstriptions');
 
     Route::get('/adherants/filter/', [adherantController::class, 'filter'])->name('filter-adherants');
 

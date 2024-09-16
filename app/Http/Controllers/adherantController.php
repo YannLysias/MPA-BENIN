@@ -278,6 +278,8 @@ class adherantController extends Controller
                 'profession' => $request->profession,
                 'npi' => $request->npi,
                 'active' => false,
+                'whatsap' => $request->whatsap,
+                'occupation' => $request->occupation,
                 'photo' => $path_photo_convert_to_table ? $path_photo_convert_to_table[2] : null,
                 'titre_id' => $titre ? $titre->id : null,
                 'departement_id' => $departement ? $departement->id : null,

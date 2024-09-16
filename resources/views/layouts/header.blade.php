@@ -2,7 +2,7 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-        <h1 class="logo me-auto"><img src="assets/img/mpa.jpeg" alt="" class="img-fluid"><a href="#" style="color: #0b5e1e;">MPA</a></h1>
+        <h1 class="logo me-auto"><img src="/assets/img/mpa.jpeg" alt="" class="img-fluid"><a href="#" style="color: #0b5e1e;">MPA</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
 
 
@@ -17,9 +17,9 @@
                 {{-- <li><a href="#" style="color: #0b5e1e;">A PROPOS</a></li> --}}
                 <li class="nav-item me-lg-5">
                     <a class="nav-link {{ Route::currentRouteName() == 'contact' ? ' active' : ''  }} px-0"
-                        href="/contact-us">CONTACT</a>
+                        href="/contact-us">CONTACTEZ-NOUS</a>
                 </li>
-                <li class="dropdown"><a href="#"><span>ADHERER</span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a href="#" class="nav-link {{ Route::currentRouteName() == '/inscrire/create' ? ' active' : '/diaspora/create'  }} px-0"><span>ADHERER</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                       <li class="nav-item me-lg-5"><a href="/inscrire/create">Local (Benin)</a></li>
                       <li class="nav-item me-lg-5"><a href="/diaspora/create">Extérieur du pays</a></li>

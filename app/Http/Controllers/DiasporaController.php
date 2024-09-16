@@ -79,6 +79,7 @@ class DiasporaController extends Controller
             'nom' => 'required|max:255',
             'prenom' => 'required|max:255',
             'sexe' => 'required|max:255',
+            'whatsap' => 'nullable|max:255',
             'telephone' => 'required|unique:diasporas,telephone|max:255',
             'email' => 'required|email|unique:users,email',
             'profession' => 'required|max:255',
@@ -98,6 +99,7 @@ class DiasporaController extends Controller
             'profession' => $request->profession,
             'categorie' => 'Diaspora',
             'pays' => $request->pays,
+            'whatsap' => $request->whatsap,
 
         ]);
 
