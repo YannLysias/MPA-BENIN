@@ -75,7 +75,7 @@
                 <div class="d-block text-danger">{{$message}}</div>
             @enderror
             </div>
-            
+
         </div>
         <div class="field item form-group">
             <label class="col-form-label col-md-3 col-sm-3  label-align">Prénom(s)*<span class="required">*</span></label>
@@ -85,7 +85,7 @@
             <div class="d-block text-danger">{{$message}}</div>
             @enderror
             </div>
-            
+
         </div>
         <div class="field item form-group">
             <label class="col-form-label col-md-3 col-sm-3  label-align">Sexe*<span class="required">*</span></label>
@@ -99,7 +99,7 @@
                 <div class="d-block text-danger">{{$message}}</div>
             @enderror
             </div>
-            
+
         </div>
         <div class="field item form-group">
             <label class="col-form-label col-md-3 col-sm-3  label-align">Email*</label>
@@ -109,7 +109,7 @@
                 <div class="d-block text-danger">{{$message}}</div>
             @enderror
             </div>
-            
+
         </div>
         <div class="field item form-group">
             <label class="col-form-label col-md-3 col-sm-3  label-align">Téléphone*<span class="required">*</span></label>
@@ -119,7 +119,7 @@
                 <div class="d-block text-danger">{{$message}}</div>
                 @enderror
             </div>
-            
+
         </div>
         <div class="field item form-group">
             <label class="col-form-label col-md-3 col-sm-3  label-align">Date Naissance*<span class="required">*</span></label>
@@ -129,7 +129,7 @@
                 <div class="d-block text-danger">{{$message}}</div>
                 @enderror
             </div>
-           
+
         </div>
         <div class="field item form-group">
             <label class="col-form-label col-md-3 col-sm-3  label-align">Lieu de Naissance*<span class="required">*</span></label>
@@ -139,7 +139,7 @@
                 <div class="d-block text-danger">{{$message}}</div>
                 @enderror
             </div>
-            
+
         </div>
         <div class="field item form-group">
             <label class="col-form-label col-md-3 col-sm-3  label-align">Groupe sanguin*<span class="required">*</span></label>
@@ -160,7 +160,7 @@
                 @enderror
             </div>
         </div>
-       
+
         <div class="field item form-group">
             <label class="col-form-label col-md-3 col-sm-3  label-align">Profession*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
@@ -169,7 +169,7 @@
                 <div class="d-block text-danger">{{$message}}</div>
                 @enderror
             </div>
-           
+
         </div>
 
         <div class="field item form-group">
@@ -180,7 +180,7 @@
                 <div class="d-block text-danger">{{$message}}</div>
                 @enderror
             </div>
-            
+
         </div>
 
         <div class="field item form-group">
@@ -398,16 +398,16 @@
 
     </script>
 
-<script>
+{{-- <script>
     var routes = {
          getCommunes: "{{ route('get-circonstriptions', ':departementId') }}"
          getCommunes: "{{ route('get-communes', ':departementId') }}"
-       
+
         , getArrondissements: "{{ route('get-arrondissements', ':communeId') }}"
         , getQuartiers: "{{ route('get-quartiers', ':arrondissementId') }}"
     };
 
-</script>
+</script> --}}
 
 <script>
         $(document).ready(function() {

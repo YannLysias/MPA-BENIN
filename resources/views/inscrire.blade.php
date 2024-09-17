@@ -185,7 +185,7 @@
                 </select>
                 </div>
                 <div class="col-md-6 form-group mt-3 ">
-                  <label for="prenom" class="form-label"><b>Commune</b></label>
+                  <label for="prenom" class="form-label"><b>Commune*</b></label>
                   <select id="commune_id" value="{{ old('commune_id') }}" name="commune_id" class="form-control" required>
                     <option value="" disabled selected>Choisissez une commune
                     </option>
@@ -228,7 +228,7 @@
                 </select>
                 </div>
               </div>
-               
+
                 <button type="submit" class="btn btn-success mt-3">Enregistrer</button>
                 <button type="reset" class="btn btn-primary mt-3">Annuler</button>
             </form>
@@ -329,6 +329,6 @@
 
   <!-- Template Main JS File -->
   <script src="/assets/js/main.js"></script>
-  
+
 </body>
 </html>

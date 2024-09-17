@@ -46,14 +46,14 @@
           <form class="" action="/diaspora" method="post" enctype="multipart/form-data" novalidate >
           @csrf
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Nom*</b></label>
                   <input class="form-control" name="nom"  placeholder="Nom en majuscule" required="required" value="{{ old('nom') }}"/>
                   @error('nom')
                       <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Prénom (s)*</b></label>
                   <input class="form-control" class='optional' placeholder="La première lettre en majuscule" required="required" name="prenom" data-validate-length-range="5,15" type="text" value="{{ old('prenom') }}"/>
                   @error('prenom')
@@ -62,14 +62,14 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Email*</b></label>
                   <input class="form-control" name="email" class='email' placeholder="Indiquez votre Email" required="required" type="email"  value="{{ old('email') }}"/>
                   @error('email')
                   <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Téléphone*</b></label>
                   <input class="form-control" type="tel" class='tel' placeholder="Indiquez votre Numéro de téléphone" name="telephone" required='required' data-validate-length-range="8,20"  value="{{ old('telephone') }}"/>
                   @error('telephone')
@@ -78,7 +78,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Sexe*</b></label>
                   <select id="choix" class="form-control" name="sexe" required="required">
                     <option value="" disabled selected>Choisir</option>
@@ -89,7 +89,7 @@
                   <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Profession*</b></label>
                   <input class="form-control" class='optional' name="profession" placeholder="Indiquez votre profession" data-validate-length-range="5,15" type="text" value="{{ old('profession') }}" />
                   @error('profession')
@@ -98,14 +98,14 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Numéro Whatsap</b></label>
                   <input class="form-control" name="whatsap" class='whatsap' placeholder="Pas obligatoire" required="required" type="text"  value="{{ old('whatsap') }}"/>
                   @error('email')
                   <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Pays*</b></label>
                   <div class="col-md-6 col-sm-6">
                       <select class="form-control" id="pays" name="pays">

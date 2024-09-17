@@ -25,21 +25,13 @@ return new class extends Migration
             $table->string('email')->unique()->nullable();
             $table->string('npi')->unique()->nullable();
             $table->string('ravip')->unique()->nullable();
-           
             $table->timestamp('email_verified_at')->nullable();
             $table->foreignId('titre_id')->constrained()->nullable();
-<<<<<<< Updated upstream
-            $table->foreignId('quartier_id')->constrained();
-            $table->foreignId('arrondissement_id')->constrained();
-            $table->foreignId('departement_id')->constrained();
-            $table->foreignId('commune_id')->constrained();
-=======
-            $table->foreignId('quartier_id')->constrained()->nullable();;
+            $table->foreignId('quartier_id')->constrained()->nullable();
             $table->foreignId('arrondissement_id')->constrained()->nullable();
             $table->foreignId('departement_id')->constrained()->nullable();
             $table->foreignId('commune_id')->constrained()->nullable();
             $table->foreignId('circonscription_id')->constrained()->nullable();
->>>>>>> Stashed changes
 
             $table->rememberToken();
             $table->timestamps();

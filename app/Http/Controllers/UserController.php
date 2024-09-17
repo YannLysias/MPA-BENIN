@@ -37,13 +37,13 @@ class UserController extends Controller
             'prenom' => 'Guy',
             'sexe' => 'Masculin',
             'telephone' => '0022963053905',
-            'email' => 'gkpedjo@gmail.com',
+            'email' => 'Admin@gmail.com',
             'type' => 'Administrateur',
             'profession' => 'Informaticien',
             'photo' => null,
             'npi' => '12324546',
             'ravip' => '1234565',
-            'password' => 'original22',
+            'password' => 'Admin123',
 
         ]);
 

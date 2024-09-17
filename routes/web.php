@@ -46,7 +46,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/diaspora-pdf', [DiasporaController::class, 'diasporaPDF'])->name('diaspora.pdf');
 
     Route::get('/coordonateur-pdf', [UserController::class, 'coordonateurPDF'])->name('coordonateur.pdf');
-    
+
     Route::get('/membre/{id}/carte', [MembreController::class, 'genererCarteAdhesion'])->name('membre.carte');
     Route::get('/cotisation', [MembreController::class, 'cotisation'])->name('cotisation');
     Route::resource('diaspora',DiasporaController::class );
@@ -82,8 +82,7 @@ Route::middleware('auth')->group(function () {
 
     // Route::resource('contact', ContactController::class );
 
-    Route::get('/get-communes/{departementId}/', [CommuneController::class, 'getCommunes'])->name('get-communes');
-    Route::get('/get-arrondissements/{communeId}/', [ArrondissementController::class, 'getArrondissements'])->name('get-arrondissements');
+    Route::get('/get-communes/{circonscriptionId}/', [CommuneController::class, 'getCommunes'])->name('get-communes');    Route::get('/get-arrondissements/{communeId}/', [ArrondissementController::class, 'getArrondissements'])->name('get-arrondissements');
     Route::get('/get-quartiers/{arrondissementId}/', [QuartierController::class, 'getQuartiers'])->name('get-quartiers');
     Route::get('/get-circonstriptions/{departementId}/', [CirconstriptionController::class, 'getCirconstriptions'])->name('get-circonstriptions');
 
