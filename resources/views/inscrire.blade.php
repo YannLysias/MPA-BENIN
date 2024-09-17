@@ -46,14 +46,14 @@
           <form class="" action="/inscrire" method="post" enctype="multipart/form-data" >
           @csrf
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Nom*</b></label>
                   <input class="form-control" name="nom"  placeholder="Nom en majuscule" required="required" value="{{ old('nom') }}"/>
                   @error('nom')
                       <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group mt-3 ">
                   <label for="prenom" class="form-label"><b>Prénom*</b></label>
                   <input class="form-control" class='optional' placeholder="La première lettre en majuscule" required="required" name="prenom" data-validate-length-range="5,15" type="text" value="{{ old('prenom') }}"/>
                   @error('prenom')
@@ -62,14 +62,14 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Email*</b></label>
                   <input class="form-control" name="email" class='email' placeholder="Indiquez votre Email" required="required" type="email"  value="{{ old('email') }}"/>
                   @error('email')
                   <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group mt-3 ">
                   <label for="prenom" class="form-label"><b>Téléphone*</b></label>
                   <input class="form-control" type="tel" class='tel' placeholder="Indiquez votre Numéro de téléphone" name="telephone" required='required' data-validate-length-range="8,20"  value="{{ old('telephone') }}"/>
                   @error('telephone')
@@ -78,7 +78,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Sexe*</b></label>
                   <select id="choix" class="form-control" name="sexe" required="required">
                     <option value="" disabled selected>Choisir</option>
@@ -89,7 +89,7 @@
                   <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group mt-3 mt-3">
                   <label for="prenom" class="form-label"><b>Groupe sanguin*</b></label>
                   <input class="form-control" class='optional' placeholder="Indiquez votre groupe sanguin" name="gsanguin" data-validate-length-range="5,15" type="text" value="{{ old('gsanguin') }}"/>
                 @error('gsanguin')
@@ -98,14 +98,14 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Date Naissance*</b></label>
                   <input class="form-control" class='optional' placeholder="date_naissance" name="date_naissance" data-validate-length-range="5,15" type="date" value="{{ old('prenom') }}"/>
                   @error('date_naissance')
                   <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group mt-3 ">
                   <label for="prenom" class="form-label"><b>Lieu de Naissance*</b></label>
                   <input class="form-control" class='optional' placeholder="Indiquez votre lieu de naissance" name="lieu_naissance" data-validate-length-range="5,15" type="text" value="{{ old('lieu_naissance') }}"/>
                   @error('lieu_naissance')
@@ -114,14 +114,14 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Profession*</b></label>
                   <input class="form-control" class='optional' name="profession" placeholder="Indiquez votre profession" data-validate-length-range="5,15" type="text" value="{{ old('profession') }}" />
                   @error('profession')
                   <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group mt-3 ">
                   <label for="prenom" class="form-label"><b>Niveau d'inscription*</b></label>
                   <input class="form-control" class='optional' placeholder="Indiquez le dernier diplôme  que vous avez obtenu" name="diplome" data-validate-length-range="5,15" type="text" value="{{ old('diplome') }}"/>
                   @error('diplome')
@@ -131,14 +131,14 @@
               </div>
 
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Occupation</b></label>
                   <input class="form-control" class='Occupation' name="occupation" placeholder="Indiquez quelle activité vous pratiquez en ce moment"required data-validate-length-range="5,15" type="text" value="{{ old('occupation') }}" />
                   @error('profession')
                   <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group mt-3 ">
                   <label for="prenom" class="form-label"><b>Numéro whatsapp</b></label>
                   <input class="form-control" class='optional' placeholder="Pas obligatoire" name="whatsap" type="text" value="{{ old('whatsap') }}"/>
                   @error('diplome')
@@ -148,14 +148,14 @@
               </div>
 
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>NPI</b></label>
                   <input class="form-control" type="number" class='tel' name="npi" data-validate-length-range="8,20" placeholder="Pas obligatoire"  value="{{ old('npi') }}" />
                   @error('npi')
                   <div class="d-block text-danger">{{$message}}</div>
                   @enderror
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group mt-3 ">
                   <label for="prenom" class="form-label"><b>Departement*</b></label>
                   <select id="departement_id" value="{{ old('departement_id') }}" name="departement_id" class="form-control" required>
                     <option value=""  disabled selected>Indiquez votre département de résidence
@@ -171,7 +171,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Circonscription</b></label>
                   <select id="circonscription_id" value="{{ old('circonscription_id') }}" name="circonscription_id" class="form-control" required>
                     <option value="" disabled selected>Choisissez une Circonscription
@@ -184,8 +184,8 @@
                     @enderror --}}
                 </select>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <label for="prenom" class="form-label"><b>Commune*</b></label>
+                <div class="col-md-6 form-group mt-3 ">
+                  <label for="prenom" class="form-label"><b>Commune</b></label>
                   <select id="commune_id" value="{{ old('commune_id') }}" name="commune_id" class="form-control" required>
                     <option value="" disabled selected>Choisissez une commune
                     </option>
@@ -199,7 +199,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group mt-3">
                   <label for="prenom" class="form-label"><b>Arrondissement</b></label>
                   <select id="arrondissement_id" value="{{ old('arrondissement_id') }}" name="arrondissement_id" class="form-control" required>
                     <option value="" disabled selected>Choisissez un Arrondissement
@@ -213,7 +213,7 @@
                     @enderror --}}
                 </select>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 form-group mt-3 ">
                   <label for="prenom" class="form-label"><b>Quartier</b></label>
                   <select id="quartier_id" value="{{ old('quartier_id') }}" name="quartier_id" class="form-control" required>
                     <option value="" disabled selected>Choisissez un Quartier

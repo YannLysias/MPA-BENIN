@@ -68,7 +68,7 @@
     <form id="formulaire" action="/coordonateur" method="post" enctype="multipart/form-data" novalidate>
         @csrf
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Nom<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Nom*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
                 <input class="form-control" name="nom"  placeholder="Nom en majuscule" required="required" value="{{ old('nom') }}"/>
             @error('nom')
@@ -78,7 +78,7 @@
             
         </div>
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Prénom(s)<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Prénom(s)*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
                 <input class="form-control" class='optional' placeholder="La première lettre en majuscule" name="prenom" data-validate-length-range="5,15" type="text" value="{{ old('prenom') }}"/>
                 @error('prenom')
@@ -88,7 +88,7 @@
             
         </div>
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Sexe<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Sexe*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
                 <select id="choix" class="form-control forms-control-lg" name="sexe">
                     <option value="" disabled selected>Choisir</option>
@@ -112,7 +112,7 @@
             
         </div>
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Téléphone<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Téléphone*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
                 <input class="form-control" type="tel" class='tel' placeholder="Indiquez votre Numéro" name="telephone" required='required' data-validate-length-range="8,20"  value="{{ old('telephone') }}"/>
                 @error('telephone')
@@ -122,7 +122,7 @@
             
         </div>
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Date Naissance<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Date Naissance*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
                 <input class="form-control" class='optional' placeholder="date_naissance" name="date_naissance" data-validate-length-range="5,15" type="date" value="{{ old('date_naissance') }}"/>
                 @error('date_naissance')
@@ -132,7 +132,7 @@
            
         </div>
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Lieu de Naissance<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Lieu de Naissance*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
                 <input class="form-control" class='optional' placeholder="Indiquez votre lieu de naissance" name="lieu_naissance" data-validate-length-range="5,15" type="text" value="{{ old('lieu_naissance') }}"/>
                 @error('lieu_naissance')
@@ -142,7 +142,7 @@
             
         </div>
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Groupe sanguin<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Groupe sanguin*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
                 <input class="form-control" class='optional' placeholder="Indiquez votre groupe sanguin" name="gsanguin" data-validate-length-range="5,15" type="text" value="{{ old('gsanguin') }}"/>
                 @error('gsanguin')
@@ -152,7 +152,7 @@
         </div>
 
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Niveau d'inscription<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Niveau d'inscription*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
                 <input class="form-control" class='optional' placeholder="Indiquez le dernier diplome que vous avez obtenu" name="diplome" data-validate-length-range="5,15" type="text" value="{{ old('diplome') }}"/>
                 @error('diplome')
@@ -162,7 +162,7 @@
         </div>
        
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Profession<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Profession*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
                 <input class="form-control" class='optional' name="profession" placeholder="Indiquez votre profession" data-validate-length-range="5,15" type="text" value="{{ old('profession') }}" />
                 @error('profession')
@@ -173,7 +173,7 @@
         </div>
 
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">NPI</label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">NPI*</label>
             <div class="col-md-6 col-sm-6">
                 <input class="form-control" type="number" class='tel' name="npi" data-validate-length-range="8,20" placeholder="Pas obligatoire" value="{{ old('npi') }}" />
                 @error('npi')
@@ -202,7 +202,7 @@
 
         <div class="field item form-group">
 
-            <label class="col-form-label col-md-3 col-sm-3 label-align">Departements<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3 label-align">Departements*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
             <select id="departement_id" name="departement_id" class="form-control forms-control-lg" required>
                 <option value=""  disabled selected>Choisissez un departement
@@ -220,7 +220,7 @@
         </div>
         </div>
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Circonscription<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Circonscription*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
             <select id="circonscription_id" value="{{ old('circonscription_id') }}" name="circonscription_id" class="form-control forms-control-lg" required>
                 <option value="" disabled selected>Choisissez une Circonscription
@@ -235,7 +235,7 @@
             </div>
         </div>
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Communes<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Communes*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
             <select id="commune_id" value="{{ old('commune_id') }}" name="commune_id" class="form-control forms-control-lg" required>
                 <option value="" disabled selected>Choisissez une commune
@@ -250,7 +250,7 @@
             </div>
         </div>
         <div class="field item form-group">
-            <label class="col-form-label col-md-3 col-sm-3  label-align">Arrondissements<span class="required">*</span></label>
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Arrondissements*<span class="required">*</span></label>
             <div class="col-md-6 col-sm-6">
             <select id="arrondissement_id" value="{{ old('arrondissement_id') }}" name="arrondissement_id" class="form-control forms-control-lg" required>
                 <option value="" disabled selected>Choisissez un Arrondissement
@@ -322,25 +322,6 @@
             <!-- /footer content -->
         </div>
     </div>
-
-
-      <!-- Modal -->
-      {{-- <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true" style="display:none">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="successModalLabel">Success!</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              Your submission was successful!
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div> --}}
 
 
 
